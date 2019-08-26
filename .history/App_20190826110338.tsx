@@ -124,17 +124,8 @@ export default observer(() => {
   const data = [14, 80, 100, 55];
   const chartEl = (
     <>
-      <Text style={{ color: 'yellow', fontSize: 25 }}>Bulan Agustus 2019</Text>
-      <View
-        style={{
-          height: 200,
-          padding: 20,
-          width: '50%',
-          marginTop: 50,
-          backgroundColor: 'rgba(255,255,255, .8)',
-          borderRadius: 15
-        }}
-      >
+      <Text style={styles.logoText}>Bulan Agustus 2019</Text>
+      <View style={{ height: 200, padding: 20, width: '50%', marginTop: 50 }}>
         <BarChart
           style={{ flex: 1 }}
           data={data}
@@ -144,7 +135,7 @@ export default observer(() => {
           <Grid />
         </BarChart>
         <XAxis
-          style={{ marginTop: 10, color: 'yellow' }}
+          style={{ marginTop: 10 }}
           data={data}
           scale={scale.scaleBand}
           formatLabel={(value, index) => index + 1}
@@ -187,26 +178,17 @@ export default observer(() => {
           style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}
         >
           <Text style={{ color: 'white', fontSize: 27, fontWeight: 'bold' }}>
-            KEMENTRIAN PERHUBUNGAN
+            Distrik Navigasi - Departemen Perhubungan
           </Text>
           <Text
             style={{
               color: 'white',
               fontSize: 20,
-              marginTop: 5,
+              marginTop: 10,
               fontWeight: 'bold'
             }}
           >
-            DIREKTORAT JENDRAL PERHUBUNGAN LAUT
-          </Text>
-          <Text
-            style={{
-              color: 'white',
-              fontSize: 20,
-              fontWeight: 'bold'
-            }}
-          >
-            DISTRIK NAVIGASI KELAS I SURABAYA
+            PEMERINTAH KOTA {meta.lokasi.toUpperCase()}
           </Text>
         </View>
       </View>
@@ -223,6 +205,7 @@ export default observer(() => {
 });
 
 const styles = StyleSheet.create({
+  logoText: { fontSize: 24, color: 'yellow' },
   container: {
     flex: 1,
     alignItems: 'center',

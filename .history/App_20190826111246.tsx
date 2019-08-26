@@ -131,8 +131,7 @@ export default observer(() => {
           padding: 20,
           width: '50%',
           marginTop: 50,
-          backgroundColor: 'rgba(255,255,255, .8)',
-          borderRadius: 15
+          backgroundColor: 'white'
         }}
       >
         <BarChart
@@ -187,26 +186,17 @@ export default observer(() => {
           style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}
         >
           <Text style={{ color: 'white', fontSize: 27, fontWeight: 'bold' }}>
-            KEMENTRIAN PERHUBUNGAN
+            Distrik Navigasi - Departemen Perhubungan
           </Text>
           <Text
             style={{
               color: 'white',
               fontSize: 20,
-              marginTop: 5,
+              marginTop: 10,
               fontWeight: 'bold'
             }}
           >
-            DIREKTORAT JENDRAL PERHUBUNGAN LAUT
-          </Text>
-          <Text
-            style={{
-              color: 'white',
-              fontSize: 20,
-              fontWeight: 'bold'
-            }}
-          >
-            DISTRIK NAVIGASI KELAS I SURABAYA
+            PEMERINTAH KOTA {meta.lokasi.toUpperCase()}
           </Text>
         </View>
       </View>

@@ -203,6 +203,7 @@ export default observer(() => {
             style={{
               color: 'white',
               fontSize: 20,
+              marginTop: 5,
               fontWeight: 'bold'
             }}
           >

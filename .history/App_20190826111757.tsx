@@ -187,7 +187,7 @@ export default observer(() => {
           style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}
         >
           <Text style={{ color: 'white', fontSize: 27, fontWeight: 'bold' }}>
-            KEMENTRIAN PERHUBUNGAN
+            KEMENTRIANG PERHUBUNGAN
           </Text>
           <Text
             style={{
@@ -203,6 +203,7 @@ export default observer(() => {
             style={{
               color: 'white',
               fontSize: 20,
+              marginTop: 5,
               fontWeight: 'bold'
             }}
           >

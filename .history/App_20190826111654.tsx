@@ -187,26 +187,17 @@ export default observer(() => {
           style={{ justifyContent: 'center', alignItems: 'center', flex: 1 }}
         >
           <Text style={{ color: 'white', fontSize: 27, fontWeight: 'bold' }}>
-            KEMENTRIAN PERHUBUNGAN
+            Kementrian Perhubungan
           </Text>
           <Text
             style={{
               color: 'white',
               fontSize: 20,
-              marginTop: 5,
+              marginTop: 10,
               fontWeight: 'bold'
             }}
           >
             DIREKTORAT JENDRAL PERHUBUNGAN LAUT
-          </Text>
-          <Text
-            style={{
-              color: 'white',
-              fontSize: 20,
-              fontWeight: 'bold'
-            }}
-          >
-            DISTRIK NAVIGASI KELAS I SURABAYA
           </Text>
         </View>
       </View>
