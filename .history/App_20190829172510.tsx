@@ -78,19 +78,21 @@ export default observer(() => {
             style={{
               fontFamily: 'semibold',
               color: 'white',
+              textAlign: 'right',
               fontSize: scale(10)
             }}
           >
-            KEMENTERIAN PERHUBUNGAN
+            Kementerian Perhubungan
           </Text>
           <Text
             style={{
               fontFamily: 'semibold',
               color: 'white',
+              textAlign: 'right',
               fontSize: scale(8)
             }}
           >
-            DIREKTORAT JENDERAL PERHUBUNGAN LAUT
+            Direktorat Jenderal Perhubungan Laut
           </Text>
 
           <Text
@@ -98,6 +100,7 @@ export default observer(() => {
               paddingTop: scale(2),
               fontFamily: 'semibold',
               color: 'white',
+              textAlign: 'right',
               fontSize: scale(7)
             }}
           >

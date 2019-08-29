@@ -78,6 +78,7 @@ export default observer(() => {
             style={{
               fontFamily: 'semibold',
               color: 'white',
+              textAlign: 'right',
               fontSize: scale(10)
             }}
           >
@@ -87,6 +88,7 @@ export default observer(() => {
             style={{
               fontFamily: 'semibold',
               color: 'white',
+              textAlign: 'right',
               fontSize: scale(8)
             }}
           >
@@ -98,6 +100,7 @@ export default observer(() => {
               paddingTop: scale(2),
               fontFamily: 'semibold',
               color: 'white',
+              textAlign: 'right',
               fontSize: scale(7)
             }}
           >
