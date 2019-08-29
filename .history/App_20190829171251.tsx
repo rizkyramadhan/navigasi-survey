@@ -92,7 +92,7 @@ export default observer(() => {
               fontSize: scale(8)
             }}
           >
-            Direktorat Jenderal Perhubungan Laut
+            Direktorat Jendral Perhubungan Laut
           </Text>
 
           <Text
