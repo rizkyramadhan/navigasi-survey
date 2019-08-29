@@ -64,7 +64,7 @@ export default observer(() => {
       >
         <Image
           source={logoImg}
-          style={{ width: scale(30), height: scale(30) }}
+          style={{ width: scale(25), height: scale(25) }}
           resizeMode='contain'
         />
         <View
