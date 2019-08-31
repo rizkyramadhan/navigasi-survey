@@ -54,12 +54,13 @@ export default observer(() => {
         isemibold: require('./assets/fonts/AsapCondensed-MediumItalic.ttf'),
         iregular: require('./assets/fonts/AsapCondensed-RegularItalic.ttf')
       });
+      console.log(toJS(meta));
       meta.loading = false;
     };
     loadFont();
   }, []);
 
-  if (meta.loading) return <Text>{JSON.stringify(meta.loading)}</Text>;
+  if (meta.loading) return null;
 
   return (
     <ImageBackground resizeMode='cover' source={bg} style={{ flex: 1 }}>

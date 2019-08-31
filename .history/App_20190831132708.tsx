@@ -1,14 +1,20 @@
 import * as Font from 'expo-font';
-
-import { toJS } from 'mobx';
 import { observer, useObservable } from 'mobx-react-lite';
 import React, { useEffect } from 'react';
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import {
+  Image,
+  ImageBackground,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity
+} from 'react-native';
 import { scale } from 'react-native-size-matters';
-import Chart from './Chart';
 import Footer from './Footer';
 import Pilihan from './Pilihan';
 import Thanks from './Thanks';
+import Chart from './Chart';
 
 const logoImg = require(`./assets/imgs/logo.png`);
 const bg = require(`./assets/imgs/bg2.png`);
@@ -18,7 +24,6 @@ export default observer(() => {
     current: -1,
     timer: 0,
     hour: 0,
-    loading: true,
     sapa: {
       id: 'Selamat Pagi',
       en: 'Good Morning'
@@ -45,21 +50,16 @@ export default observer(() => {
         meta.sapa.en = 'Good Night';
       }
     }, 1000);
-    const loadFont = async () => {
-      await Font.loadAsync({
-        bold: require('./assets/fonts/AsapCondensed-Bold.ttf'),
-        semibold: require('./assets/fonts/AsapCondensed-Medium.ttf'),
-        regular: require('./assets/fonts/AsapCondensed-Regular.ttf'),
-        ibold: require('./assets/fonts/AsapCondensed-BoldItalic.ttf'),
-        isemibold: require('./assets/fonts/AsapCondensed-MediumItalic.ttf'),
-        iregular: require('./assets/fonts/AsapCondensed-RegularItalic.ttf')
-      });
-      meta.loading = false;
-    };
-    loadFont();
-  }, []);
 
-  if (meta.loading) return <Text>{JSON.stringify(meta.loading)}</Text>;
+    Font.loadAsync({
+      bold: require('./assets/fonts/AsapCondensed-Bold.ttf'),
+      semibold: require('./assets/fonts/AsapCondensed-Medium.ttf'),
+      regular: require('./assets/fonts/AsapCondensed-Regular.ttf'),
+      ibold: require('./assets/fonts/AsapCondensed-BoldItalic.ttf'),
+      isemibold: require('./assets/fonts/AsapCondensed-MediumItalic.ttf'),
+      iregular: require('./assets/fonts/AsapCondensed-RegularItalic.ttf')
+    });
+  }, []);
 
   return (
     <ImageBackground resizeMode='cover' source={bg} style={{ flex: 1 }}>

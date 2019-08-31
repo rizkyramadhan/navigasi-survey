@@ -59,7 +59,7 @@ export default observer(() => {
     loadFont();
   }, []);
 
-  if (meta.loading) return <Text>{JSON.stringify(meta.loading)}</Text>;
+  if (meta.loading) return null;
 
   return (
     <ImageBackground resizeMode='cover' source={bg} style={{ flex: 1 }}>

@@ -105,16 +105,13 @@ export default observer(({ meta }: any) => {
         width={scale(400)}
         height={scale(200)}
         chartConfig={{
-          backgroundGradientFrom: '#5A81BF',
-          backgroundGradientTo: '#3B4D9D',
+          backgroundGradientFrom: 'transparent',
+          backgroundGradientTo: 'transparent',
           decimalPlaces: 2, // optional, defaults to 2dp
           color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
           style: {
-            borderRadius: 8
+            borderRadius: 16
           }
-        }}
-        style={{
-          borderRadius: 8
         }}
       />
     </View>

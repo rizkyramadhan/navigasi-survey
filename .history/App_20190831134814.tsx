@@ -1,6 +1,4 @@
 import * as Font from 'expo-font';
-
-import { toJS } from 'mobx';
 import { observer, useObservable } from 'mobx-react-lite';
 import React, { useEffect } from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
@@ -54,12 +52,13 @@ export default observer(() => {
         isemibold: require('./assets/fonts/AsapCondensed-MediumItalic.ttf'),
         iregular: require('./assets/fonts/AsapCondensed-RegularItalic.ttf')
       });
+      console.log(meta.loading);
       meta.loading = false;
     };
     loadFont();
   }, []);
 
-  if (meta.loading) return <Text>{JSON.stringify(meta.loading)}</Text>;
+  if (meta.loading) return null;
 
   return (
     <ImageBackground resizeMode='cover' source={bg} style={{ flex: 1 }}>
